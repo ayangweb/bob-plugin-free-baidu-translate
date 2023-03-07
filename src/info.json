@@ -1,0 +1,12 @@
+{
+  "identifier": "com.bob-plugin-free-baidu-translate",
+  "version": "0.0.0",
+  "category": "translate",
+  "name": "百度翻译",
+  "summary": "免token调用百度翻译",
+  "icon": "103",
+  "author": "ayang",
+  "homepage": "https://github.com/bilibili-ayang/bob-plugin-free-baidu-translate",
+  "appcast": "https://raw.githubusercontent.com/bilibili-ayang/bob-plugin-free-baidu-translate/master/appcast.json",
+  "minBobVersion": "0.5.0"
+}

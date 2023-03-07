@@ -1,0 +1,12 @@
+{
+  "identifier": "com.bob-plugin-free-baidu-translate",
+  "versions": [
+    {
+      "version": "0.0.0",
+      "desc": "https://github.com/bilibili-ayang/bob-plugin-free-baidu-translate/blob/master/CHANGELOG.md",
+      "sha256": "e0556e05484b03b6fa73d4641af7fc05b1d2fee61bf49bc0c285014a45567a92",
+      "url": "https://github.com/bilibili-ayang/bob-plugin-free-baidu-translate/releases/download/v0.0.0/bob-plugin-free-baidu-translate.bobplugin",
+      "minBobVersion": "0.5.0"
+    }
+  ]
+}
