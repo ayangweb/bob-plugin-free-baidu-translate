@@ -37,14 +37,13 @@ router.post("/translate", async (ctx) => {
 
 	const { query, from, to } = body;
 
-	const { data: payload } = await axios.get(
-		`https://fanyi.baidu.com/#${from}/${to}/${query}`,
-		{
-			headers: {
-				Cookie: "BAIDUID=235053FB8DF5684D55B3CDF040B46281:FG=1",
-			},
-		}
-	);
+	const headers = {
+		Cookie: "BAIDUID=235053FB8DF5684D55B3CDF040B46281:FG=1",
+	};
+
+	const { data: payload } = await axios.get("https://fanyi.baidu.com", {
+		headers,
+	});
 
 	const sign = payload.match(/window\.gtk\s*=\s*"([^"]+)"/)[1];
 	const token = payload.match(/token\s*:\s*'([^']+)'/)[1];
@@ -59,9 +58,7 @@ router.post("/translate", async (ctx) => {
 			domain: "common",
 		},
 		{
-			headers: {
-				Cookie: "BAIDUID=235053FB8DF5684D55B3CDF040B46281:FG=1",
-			},
+			headers,
 		}
 	);
 
