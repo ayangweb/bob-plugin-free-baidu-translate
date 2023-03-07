@@ -1,6 +1,6 @@
 {
   "identifier": "com.bob-plugin-free-baidu-translate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "category": "translate",
   "name": "百度翻译",
   "summary": "免token调用百度翻译",
